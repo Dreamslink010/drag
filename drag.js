@@ -4,5 +4,6 @@ function drag(id){
 		console.log("我在版本库");
 		console.log("我在暂存区");
 		console.log("我在工作区");
+		console.log("撤销");
 	}
 }
