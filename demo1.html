@@ -8,6 +8,13 @@
 	<body>
 		<div id="box">
 			<p>
+				设置 用户名 邮箱
+				git config --global user.name "用户名"
+				git config --global user.email "邮箱"
+				
+				克隆远程仓库的文件到本地
+				git clone 仓库地址
+				
 				git status 			查看工作区状态
 				git add + 文件名    	将文件提交到暂存区
 				git add .   		将全部修改过的文件存到暂存区
@@ -33,6 +40,9 @@
 				git reset --hard HEAD^  恢复到前一个版本
 				git reset --hard HEAD~3  恢复到之前指定的第3个版本
 				git reflog 				打出所有提交过的记录，回到指定版本
+				
+				git remote 	 查看分支名
+				git push 分支名 master 	 提交代码到远程仓库
 			</p>
 		</div>
 	</body>
