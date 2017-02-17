@@ -6,5 +6,6 @@ function drag(id){
 		console.log("我在工作区");
 		console.log("撤销");
 		console.log("撤回本次操作");
+		console.log("分支操作")
 	}
 }
