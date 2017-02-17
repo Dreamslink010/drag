@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<style>
+			#box{
+				width: 200px;
+				height: 200px;
+				background: blueviolet;
+				position: absolute;
+			}
+		</style>
 		<script src="drag.js"></script>
 	</head>
 	<body>
 		<div id="box">
-			<p>
+			<!--<p>
 				设置 用户名 邮箱
 				git config --global user.name "用户名"
 				git config --global user.email "邮箱"
@@ -62,7 +70,10 @@
 				git branch -d 分支名 		删除指定的分支（合并以后的才能删，没有合并的不能删）
 				git branch -D 分支名  	强制删除没有合并的分支
 				合并分支的时候，如果遇到冲突的话 git status 查看状态就可以查看到冲突，并且会在工作区看到冲突的详细，需要手动解决冲突
-			</p>
+			</p>-->
 		</div>
+		<script>
+			drag("box");
+		</script>
 	</body>
 </html>

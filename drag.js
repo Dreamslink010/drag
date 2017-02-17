@@ -1,11 +1,18 @@
 function drag(id){
-	var obj = document.getElementById("id");
-	obj.onmousedown = function(){
-		console.log("我在版本库");
-		console.log("我在暂存区");
-		console.log("我在工作区");
-		console.log("撤销");
-		console.log("撤回本次操作");
-		console.log("分支操作")
+	var obj = document.getElementById("box");
+	var disX = 0;
+	var disY = 0;
+	obj.onmousedown = function(ev){
+		disX = ev.pageX - obj.offsetLeft;
+		disY = ev.pageY - obj.offsetTop;
+		document.onmousemove = function(ev){
+			obj.style.left = ev.pageX - disX + "px";
+			obj.style.top = ev.pageY - disY + "px";
+		};
+		document.onmouseup = function(ev){
+			document.onmousemove = null;
+			document.onmouseup = null;
+		};
+		return false;
 	}
 }
